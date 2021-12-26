@@ -5,15 +5,15 @@ using System.Threading.Tasks;
 
 namespace AudiAPI.Models
 {
-    public class Auto
+    public class AutoM
     {
-        int Id { get; set; }
-        string model { get; set; }
-        string name { get; set; }
-        string category { get; set; }
-        int engine_power { get; set; }
-        string acceleration_from_0_to_100sec { get; set; }
-        decimal price { get; set; }
-        string characterisric{ get; set; }
+        public int id_auto { get; set; }
+        public string model { get; set; }
+        public string name { get; set; }
+        public string category { get; set; }
+        public int engine_power { get; set; }
+        public string acceleration_from_0_to_100sec { get; set; }
+        public decimal price { get; set; }
+        public string characterisric { get; set; }
     }
 }
