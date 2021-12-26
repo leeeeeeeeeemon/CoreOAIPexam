@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fa6395376c754488b200927df4999087" Name="Diagram1">
+        <EntityTypeShape EntityType="AudiDodelat_33__33__33__33__33__33__33Model.Auto" Width="1.5" PointX="3.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudiDodelat_33__33__33__33__33__33__33Model.Discounts" Width="1.5" PointX="3.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudiDodelat_33__33__33__33__33__33__33Model.Employee" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudiDodelat_33__33__33__33__33__33__33Model.Position" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudiDodelat_33__33__33__33__33__33__33Model.Sale_Auto" Width="1.5" PointX="6" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudiDodelat_33__33__33__33__33__33__33Model.users" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <AssociationConnector Association="AudiDodelat_33__33__33__33__33__33__33Model.FK_Sale_Auto_Auto" ManuallyRouted="false" />
+        <AssociationConnector Association="AudiDodelat_33__33__33__33__33__33__33Model.FK_Sale_Auto_Discounts" ManuallyRouted="false" />
+        <AssociationConnector Association="AudiDodelat_33__33__33__33__33__33__33Model.FK_Employee_Position" ManuallyRouted="false" />
+        <AssociationConnector Association="AudiDodelat_33__33__33__33__33__33__33Model.FK_Employee_users" ManuallyRouted="false" />
+        <AssociationConnector Association="AudiDodelat_33__33__33__33__33__33__33Model.FK_Sale_Auto_users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
