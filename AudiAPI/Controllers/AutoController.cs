@@ -43,6 +43,36 @@ namespace AudiAPI.Controllers
             ProjectService.Add(avto);
             return CreatedAtAction(nameof(Create), new { id = avto.id_auto }, avto);
         }
+
+        //DELETE
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var auto = ProjectService.Get(id);
+
+            if (auto is null)
+                return NotFound();
+
+            ProjectService.Delete(id);
+
+            return NoContent();
+        }
+
+        //UPDATE
+        [HttpPut("{id}")]
+        public IActionResult Update(int id, Auto auto)
+        {
+            if (id != auto.id_auto)
+                return BadRequest();
+
+            var existingProject = ProjectService.Get(id);
+            if (existingProject is null)
+                return NotFound();
+
+            ProjectService.Update(id, auto);
+
+            return NoContent();
+        }
     }
 
     

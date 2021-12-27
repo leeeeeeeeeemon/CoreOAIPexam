@@ -13,10 +13,10 @@ namespace CoreOAIPexam
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class AudiDodelat_33__33__33__33__33__33__33Entities : DbContext
+    public partial class AudiDodelat_33__33__33__33__33__33__33Entities1 : DbContext
     {
-        public AudiDodelat_33__33__33__33__33__33__33Entities()
-            : base("name=AudiDodelat_33__33__33__33__33__33__33Entities")
+        public AudiDodelat_33__33__33__33__33__33__33Entities1()
+            : base("name=AudiDodelat_33__33__33__33__33__33__33Entities1")
         {
         }
     
@@ -30,6 +30,7 @@ namespace CoreOAIPexam
         public DbSet<Employee> Employee { get; set; }
         public DbSet<Position> Position { get; set; }
         public DbSet<Sale_Auto> Sale_Auto { get; set; }
+        public DbSet<sysdiagrams> sysdiagrams { get; set; }
         public DbSet<users> users { get; set; }
     }
 }

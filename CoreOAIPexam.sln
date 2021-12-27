@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreOAIPexam", "CoreOAIPexam\CoreOAIPexam.csproj", "{98E88AFC-DE35-4368-B3C8-13596EFCA2DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudiAPI", "AudiAPI\AudiAPI.csproj", "{BCE5B8AC-74F7-45E9-9715-A5E3835364EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AudiAPI", "AudiAPI\AudiAPI.csproj", "{BCE5B8AC-74F7-45E9-9715-A5E3835364EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudiWeb", "AudiWeb\AudiWeb.csproj", "{51E291BB-0391-4DF4-9D66-D215206B2EBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{BCE5B8AC-74F7-45E9-9715-A5E3835364EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCE5B8AC-74F7-45E9-9715-A5E3835364EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCE5B8AC-74F7-45E9-9715-A5E3835364EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51E291BB-0391-4DF4-9D66-D215206B2EBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51E291BB-0391-4DF4-9D66-D215206B2EBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51E291BB-0391-4DF4-9D66-D215206B2EBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51E291BB-0391-4DF4-9D66-D215206B2EBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

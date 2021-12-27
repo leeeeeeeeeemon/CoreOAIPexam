@@ -22,7 +22,8 @@ namespace AudiAPI.Service
            // Autos.AddRange(AutoBD.ToArray());
            foreach(var f in AutoBD)
             {
-                Autos.Add(new AutoM() { id_auto = f.id_auto, model = f.model, name = f.name, category = f.category, engine_power = (int)f.engine_power, acceleration_from_0_to_100_sec____ = f.acceleration_from_0_to_100_sec____, characterisric = f.characteristic, price = (Decimal)f.price });
+                //Autos.Add(new AutoM() { id_auto = f.id_auto, model = f.model, name = f.name, category = f.category, engine_power = (int)f.engine_power, acceleration_from_0_to_100_sec____ = f.acceleration_from_0_to_100_sec____, characterisric = f.characteristic, price = (Decimal)f.price });
+                Autos.Add(new AutoM() {id_auto = f.id_auto, model = f.model, name = f.name, category= f.category, acceleration_from_0_to_100_sec____ = f.acceleration_from_0_to_100_sec____, characterisric = f.characteristic });
             }
             
         }
@@ -44,13 +45,10 @@ namespace AudiAPI.Service
             DeleteCar(id);
         }
 
-        public static void Update(Auto auto)
+        public static void Update(int id, Auto auto)
         {
-            var index = Autos.FindIndex(p => p.id_auto == auto.id_auto);
-            if (index == -1)
-                return;
-
-            //DODELATTTTT
+            
+            UpdateAuto(id, auto);
         }
 
     }
