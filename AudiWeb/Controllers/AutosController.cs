@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AudiWeb.Core;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace AudiWeb.Controllers
 {
-    public class AutosController1 : Controller
+    public class AutosController : Controller
     {
         public IActionResult Index()
         {
-            return View();
+            var autos = AutoStorage.Autos;
+            return View(autos);
         }
     }
 }

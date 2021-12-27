@@ -28,28 +28,7 @@ namespace CoreOAIPexam
 
         public static void DeleteCar(int id)
         {
-            //var deleteDetail =
-            //    from Auto in connection.Auto
-            //    where Auto.id_auto == id
-            //    select Auto;
-            //foreach(var detail in deleteDetail)
-            //{
-            //    connection.Auto.At(detail);
-            //    connection.SaveChanges();
-            //}
-            //connection2.Query($"delete [dbo].[Auto] where [id_auto] = {id}");
-            //try
-            //{
-            //    SqlConnection con = new SqlConnection(connStr);
-            //    SqlCommand cmd = new SqlCommand($"DELETE  from [Auto] where id_auto = {id}");
-            //    con.Open();
-            //    cmd.ExecuteNonQuery();
-            //    con.Close();
-            //}
-            //catch (SqlException)
-            //{
-
-            //}
+            
             Auto deletAuto = connection.Auto.FirstOrDefault<Auto>(p => p.id_auto == id);
             connection.Auto.Remove(deletAuto);
             connection.SaveChanges();

@@ -1,0 +1,34 @@
+﻿@using CoreOAIPexam;
+@model List<Auto>
+
+
+<h2>Our Autos</h2>
+
+<div class="row">
+    @foreach (var auto in Model)
+    {
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div>
+                        <img class="card-img-top" src="~/images/audi-logo-png-726.png"
+                             alt="@auto.name" />
+                    </div>
+                    <h2 class="card-title text-center">
+                        <a href="@auto.model" target=_blank>@auto.name</a>
+                    </h2>
+                    <div>
+                        <p class="font-weight-normal">@auto.characteristic</p>
+                    </div>
+                    <div class="text-center">
+                        <a class="btn btn-danger" asp-controller="Projects"
+                           asp-action="Remove" asp-route-name="@auto.name"
+                           role="button">
+                            Remove
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
