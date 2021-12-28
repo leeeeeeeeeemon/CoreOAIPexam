@@ -2,7 +2,12 @@
 @model List<Auto>
 
 
-<h2>Our Autos</h2>
+<h2>Our Cars</h2>
+<div class="row justify-content-end">
+    <a class="btn btn-primary" asp-controller="Autos"
+       asp-action="Add" role="button">Add car</a>
+</div>
+<br />
 
 <div class="row">
     @foreach (var auto in Model)
@@ -15,13 +20,19 @@
                              alt="@auto.name" />
                     </div>
                     <h2 class="card-title text-center">
+                        @auto.id_auto<br />
                         <a href="@auto.model" target=_blank>@auto.name</a>
                     </h2>
                     <div>
                         <p class="font-weight-normal">@auto.characteristic</p>
                     </div>
                     <div class="text-center">
-                        <a class="btn btn-danger" asp-controller="Projects"
+                        <a class="btn btn-danger" asp-controller="Autos"
+                           asp-action="Buy" asp-route-name="@auto.name"
+                           role="button">
+                            Buy
+                        </a>
+                        <a class="btn btn-danger" asp-controller="Autos"
                            asp-action="Remove" asp-route-name="@auto.name"
                            role="button">
                             Remove

@@ -12,8 +12,7 @@ namespace CoreOAIPexam
     public class DBconnection
     {
         public static AudiDodelat_33__33__33__33__33__33__33Entities1 connection = new AudiDodelat_33__33__33__33__33__33__33Entities1();
-        //private static string connStr = ConfigurationManager.ConnectionStrings["AudiDodelat_33__33__33__33__33__33__33"].ConnectionString;
-        //public static IDbConnection connection2 = new SqlConnection(connStr);
+        
 
         public static List<Auto> GetAutos()
         {
@@ -30,6 +29,13 @@ namespace CoreOAIPexam
         {
             
             Auto deletAuto = connection.Auto.FirstOrDefault<Auto>(p => p.id_auto == id);
+            connection.Auto.Remove(deletAuto);
+            connection.SaveChanges();
+        }
+        public static void DeleteCar(string name)
+        {
+
+            Auto deletAuto = connection.Auto.FirstOrDefault<Auto>(p => p.name == name);
             connection.Auto.Remove(deletAuto);
             connection.SaveChanges();
         }

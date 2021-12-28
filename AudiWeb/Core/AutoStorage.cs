@@ -21,8 +21,16 @@ namespace AudiWeb.Core
         //};
         public static List<Auto> Autos { get; set; } = DBconnection.GetAutos();
 
+        public static void Add(Auto auto)
+        {
+            CoreOAIPexam.DBconnection.AddCar(auto);
+        }
 
-
+        public static void RemoveByName(string nameSSS)
+        {
+            //DODELAT
+            CoreOAIPexam.DBconnection.DeleteCar(nameSSS);
+        }
 
     }
 }
