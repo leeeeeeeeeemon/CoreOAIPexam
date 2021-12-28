@@ -10,6 +10,7 @@ namespace AudiWeb.Controllers
 {
     public class AutosController : Controller
     {
+        //йоу
         public IActionResult Index()
         {
             var autos = AutoStorage.Autos;
