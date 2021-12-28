@@ -28,7 +28,7 @@ namespace AudiWeb.Core
 
         public static void RemoveByName(string nameSSS)
         {
-            //DODELAT
+            
             CoreOAIPexam.DBconnection.DeleteCar(nameSSS);
         }
 
