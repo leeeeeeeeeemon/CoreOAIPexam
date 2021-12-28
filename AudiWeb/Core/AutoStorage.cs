@@ -28,8 +28,11 @@ namespace AudiWeb.Core
 
         public static void RemoveByName(string nameSSS)
         {
-            
             CoreOAIPexam.DBconnection.DeleteCar(nameSSS);
+        }
+        public static void buyCarByName(string name)
+        {
+            CoreOAIPexam.DBconnection.buyCar(name);
         }
 
     }

@@ -34,10 +34,16 @@ namespace AudiWeb.Controllers
             return RedirectToAction("Index");
         }
 
-        public void Buy()
-        {
-            //TempData["alertMessage"] = "Whatever you want to alert the user with";
+        //public void Buy()
+        //{
+        //    TempData["alertMessage"] = "Whatever you want to alert the user with";
 
+        //}
+
+        public void Buy(string name)
+        {
+            AutoStorage.buyCarByName(name);
+            TempData["alertMessage"] = "Успешная покупка";
         }
     }
 }

@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AudiAPI", "AudiAPI\AudiAPI.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudiWeb", "AudiWeb\AudiWeb.csproj", "{51E291BB-0391-4DF4-9D66-D215206B2EBA}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AUdi", "..\Audi_Prohhhh\RDS GP App\AUdi.csproj", "{B35DC106-E00A-4DAA-844C-0D93D7467BBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{51E291BB-0391-4DF4-9D66-D215206B2EBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51E291BB-0391-4DF4-9D66-D215206B2EBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51E291BB-0391-4DF4-9D66-D215206B2EBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B35DC106-E00A-4DAA-844C-0D93D7467BBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B35DC106-E00A-4DAA-844C-0D93D7467BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B35DC106-E00A-4DAA-844C-0D93D7467BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B35DC106-E00A-4DAA-844C-0D93D7467BBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

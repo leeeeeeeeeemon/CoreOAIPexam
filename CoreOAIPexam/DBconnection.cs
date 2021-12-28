@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
+using System.Collections.ObjectModel;
 
 namespace CoreOAIPexam
 {
@@ -46,6 +47,47 @@ namespace CoreOAIPexam
             updateAuto = avto;
             connection.SaveChanges();
 
+        }
+
+        public static void buyCar(string name)
+        {
+            Auto buyAuto = connection.Auto.FirstOrDefault<Auto>(p => p.name == name);
+            Sale_Auto saleOp = new Sale_Auto();
+            saleOp.id_auto = buyAuto.id_auto;
+            saleOp.id_user = 1;
+            saleOp.tlephon_number = "89393378504";
+            connection.Sale_Auto.Add(saleOp);
+            connection.SaveChanges();
+        }
+        public static void SaleCar(Sale_Auto sale)
+        {
+            connection.Sale_Auto.Add(sale);
+            connection.SaveChanges();
+        }
+
+        public static void addCar(string modelT, string nameT, string categoryT, int engPwr, string accel, decimal priceD, string charT)
+        {
+            var u = new Auto();
+            u.model = modelT;
+            u.name = nameT;
+            u.category = categoryT;
+            u.engine_power = engPwr;
+            u.acceleration_from_0_to_100_sec____ = accel;
+            u.price = priceD;
+            u.characteristic = charT;
+            connection.Auto.Add(u);
+            connection.SaveChanges();
+        }
+
+        public static ObservableCollection<users> GetUsers()
+        {
+            return new ObservableCollection<users>(connection.users.ToList());
+
+        }
+        public static void regUser(users user)
+        {
+            connection.users.Add(user);
+            connection.SaveChanges();
         }
     }
 }
