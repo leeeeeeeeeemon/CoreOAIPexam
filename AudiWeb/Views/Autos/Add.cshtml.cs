@@ -12,5 +12,6 @@ namespace AudiWeb.Views.Autos
         public void OnGet()
         {
         }
+        //Пустой контроллер
     }
 }

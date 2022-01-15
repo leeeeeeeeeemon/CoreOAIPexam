@@ -19,6 +19,8 @@ namespace AudiWeb.Core
         //        characteristic = "dotNet Core 3.1 C# CGI Examples"
         //    }
         //};
+
+        //Лишний образец закомментированного кода
         public static List<Auto> Autos { get; set; } = DBconnection.GetAutos();
 
         public static void Add(Auto auto)

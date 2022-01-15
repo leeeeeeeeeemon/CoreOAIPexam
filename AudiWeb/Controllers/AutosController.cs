@@ -10,6 +10,7 @@ namespace AudiWeb.Controllers
 {
     public class AutosController : Controller
     {
+        ////Бессмысленные комментарии
         //йоу
         public IActionResult Index()
         {
@@ -41,6 +42,7 @@ namespace AudiWeb.Controllers
 
         //}
 
+        //не стёрт старый вариант метода контроллера
         public void Buy(string name)
         {
             AutoStorage.buyCarByName(name);

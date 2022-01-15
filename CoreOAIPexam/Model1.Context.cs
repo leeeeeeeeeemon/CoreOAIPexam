@@ -30,7 +30,7 @@ namespace CoreOAIPexam
         public DbSet<Employee> Employee { get; set; }
         public DbSet<Position> Position { get; set; }
         public DbSet<Sale_Auto> Sale_Auto { get; set; }
-        public DbSet<sysdiagrams> sysdiagrams { get; set; }
-        public DbSet<users> users { get; set; }
+        public DbSet<sysdiagrams> sysdiagrams { get; set; } //Именование класса с маленькой буквы
+        public DbSet<users> users { get; set; } //Именование класса с маленькой буквы
     }
 }

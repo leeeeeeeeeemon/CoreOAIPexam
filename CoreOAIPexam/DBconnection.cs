@@ -14,7 +14,7 @@ namespace CoreOAIPexam
     {
         public static AudiDodelat_33__33__33__33__33__33__33Entities1 connection = new AudiDodelat_33__33__33__33__33__33__33Entities1();
         
-
+        //много лишних пробелов внутри методов
         public static List<Auto> GetAutos()
         {
             return new List<Auto>(connection.Auto);
@@ -49,7 +49,7 @@ namespace CoreOAIPexam
 
         }
 
-        public static void buyCar(string name)
+        public static void buyCar(string name) //Название метода с маленькой буквы
         {
             Auto buyAuto = connection.Auto.FirstOrDefault<Auto>(p => p.name == name);
             Sale_Auto saleOp = new Sale_Auto();
@@ -65,8 +65,9 @@ namespace CoreOAIPexam
             connection.SaveChanges();
         }
 
-        public static void addCar(string modelT, string nameT, string categoryT, int engPwr, string accel, decimal priceD, string charT)
+        public static void addCar(string modelT, string nameT, string categoryT, int engPwr, string accel, decimal priceD, string charT) //Понятное и удобное сокращение Названий переменных аргументов
         {
+            //Наименование метода с маленькой буквы, должно быть с большой
             var u = new Auto();
             u.model = modelT;
             u.name = nameT;
